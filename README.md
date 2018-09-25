@@ -4,7 +4,7 @@
 # What's New
 Beautiful way to showcase new features of your app.
 
-<img src="https://raw.githubusercontent.com/anderscheow/WhatsNew/master/images/demo.png"/>
+<kbd><img src="https://raw.githubusercontent.com/anderscheow/WhatsNew/master/images/demo.png"/></kbd>
 
 ## Download
 
