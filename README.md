@@ -1,4 +1,4 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Validator-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6478) [![](https://jitpack.io/v/anderscheow/WhatsNew.svg)](https://jitpack.io/#anderscheow/WhatsNew)
+[![](https://jitpack.io/v/anderscheow/WhatsNew.svg)](https://jitpack.io/#anderscheow/WhatsNew)
 [![Build Status](https://travis-ci.org/anderscheow/WhatsNew.svg?branch=master)](https://travis-ci.org/anderscheow/WhatsNew)
 
 # What's New
