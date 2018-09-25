@@ -29,14 +29,7 @@ class MainActivity : AppCompatActivity() {
                     .setDescriptionTextColor(Color.BLACK)
                     .build())
 
-            this.add(Feature.Builder()
-                    .setIconRes(R.drawable.account)
-                    .setIconColor(Color.RED)
-                    .setTitleRes(R.string.title_two)
-                    .setTitleTextColor(Color.BLACK)
-                    .setDescriptionRes(R.string.description_two)
-                    .setDescriptionTextColor(Color.BLACK)
-                    .build())
+            this.add(Feature(R.drawable.account, Color.RED, R.string.title_two, Color.BLACK, R.string.description_two, Color.BLACK))
 
             this.add(Feature.Builder()
                     .setIconRes(R.drawable.alert_circle)
