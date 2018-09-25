@@ -22,7 +22,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-  compile 'io.github.anderscheow:whatsnew:1.0.0'
+  implementation 'io.github.anderscheow:whatsnew:1.0.0'
 }
 ```
 
