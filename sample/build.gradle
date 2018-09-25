@@ -1,0 +1,33 @@
+rootProject.sampleModulePlugins.each {
+    apply plugin: it
+}
+
+android {
+    def ext = rootProject.extensions.ext
+    compileSdkVersion ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId "io.github.anderscheow.whatsnew"
+        minSdkVersion ext.android.minSdkVersion
+        targetSdkVersion ext.android.targetSdkVersion
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    rootProject.sampleModuleDependencies.each {
+        add(it.configuration, it.dependency, it.options)
+    }
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">What\'s New</string>
+    <string name="lets_go">I understood</string>
+    <string name="learn_more">Learn more</string>
+
+    <string name="title_one">Title one</string>
+    <string name="title_two">Title two</string>
+    <string name="title_three">Title three</string>
+    <string name="title_four">Title four</string>
+    <string name="title_five">Title five</string>
+
+    <string name="description_one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="description_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="description_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="description_four">Lorem ipsum dolor sit amet</string>
+    <string name="description_five">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</string>
+</resources>

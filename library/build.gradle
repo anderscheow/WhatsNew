@@ -1,0 +1,45 @@
+rootProject.libraryModulePlugins.each {
+    apply plugin: it
+}
+
+apply from: 'maven-push.gradle'
+
+android {
+    def ext = rootProject.extensions.ext
+    compileSdkVersion ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion ext.android.minSdkVersion
+        targetSdkVersion ext.android.targetSdkVersion
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    dataBinding {
+        enabled = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dokka {
+    outputFormat = 'html'
+    outputDirectory = "$buildDir/javadoc"
+}
+
+dependencies {
+    rootProject.libraryModuleDependencies.each {
+        add(it.configuration, it.dependency, it.options)
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'com.github.dcendents.android-maven'
