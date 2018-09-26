@@ -1,12 +1,13 @@
 [![](https://jitpack.io/v/anderscheow/WhatsNew.svg)](https://jitpack.io/#anderscheow/WhatsNew)
 [![Build Status](https://travis-ci.org/anderscheow/WhatsNew.svg?branch=master)](https://travis-ci.org/anderscheow/WhatsNew)
+[![PayPal](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://www.paypal.me/anderscheow/5)
 
 # What's New
 Beautiful way to showcase new features of your app.
 
 <kbd><img src="https://raw.githubusercontent.com/anderscheow/WhatsNew/master/images/demo.png"/></kbd>
 
-## Download
+## 💻 Installation
 
 Step 1. Add it in your root build.gradle at the end of repositories:
 ```groovy
@@ -26,8 +27,7 @@ dependencies {
 }
 ```
 
-Usage
------
+## ❓ Usage
 Setup features
 ````kotlin
 val features = ArrayList<Feature>().apply {
@@ -117,4 +117,4 @@ Thanks to [RecyclerView Animators by wasabeef](https://github.com/wasabeef/recyc
 Any contribution is more than welcome! You can contribute through pull requests and issues on GitHub.
 
 ## License
-Validator is released under the [MIT License](https://github.com/anderscheow/Validator/blob/master/LICENSE)
+What's New is released under the [MIT License](https://github.com/anderscheow/Validator/blob/master/LICENSE)
