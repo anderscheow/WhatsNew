@@ -2,8 +2,8 @@ package io.github.anderscheow.whatsnew
 
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import io.github.anderscheow.library.WhatsNew
 import io.github.anderscheow.library.listener.WhatsNewListener
 import io.github.anderscheow.library.model.Feature

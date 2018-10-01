@@ -34,6 +34,7 @@ ext {
             supportAppCompat            :   "com.android.support:appcompat-v7:$android_support_version",
             supportConstraintLayout     :   "com.android.support.constraint:constraint-layout:$android_support_constraint_layout_version",
             supportDesign               :   "com.android.support:design:$android_support_version",
+            supportRecyclerView         :   "com.android.support:recyclerview-v7:$android_support_version",
 
             /* kotlin */
             kotlinStdlib                :   "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$build.kotlin",
