@@ -2,17 +2,16 @@ package io.github.anderscheow.library.adapter
 
 import android.content.Context
 import android.content.res.ColorStateList
-import android.support.v4.widget.ImageViewCompat
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.widget.ImageViewCompat
 import io.github.anderscheow.library.R
 import io.github.anderscheow.library.model.Feature
 
-class FeatureAdapter(private val context: Context) : RecyclerView.Adapter<FeatureAdapter.FeatureViewHolder>() {
+class FeatureAdapter(private val context: Context) : androidx.recyclerview.widget.RecyclerView.Adapter<FeatureAdapter.FeatureViewHolder>() {
 
     private val features = ArrayList<Feature>()
 
@@ -36,7 +35,7 @@ class FeatureAdapter(private val context: Context) : RecyclerView.Adapter<Featur
         notifyItemRangeChanged(0, features.size)
     }
 
-    class FeatureViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class FeatureViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
 
         private val imageView by lazy { view.findViewById<ImageView>(R.id.imageView) }
         private val titleTextView by lazy { view.findViewById<TextView>(R.id.text_view_title) }

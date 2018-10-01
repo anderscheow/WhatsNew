@@ -1,16 +1,22 @@
 language: android
 android:
   components:
-  - platform-tools
-  - tools
-  - build-tools-27.0.3
-  - android-27
+    - platform-tools
+    - tools
+    - build-tools-28.0.2
+    - android-28
+  licenses:
+    - android-sdk-license-.+
+    - '.+'
 script:
-- "./gradlew assembleRelease"
+  - "./gradlew assembleRelease"
+
 before_install:
-- yes | sdkmanager "platforms;android-27"
+  - yes | sdkmanager "platforms;android-28"
+
 notifications:
   email: true
   slack:
     secure: BpmHHT0nLRMbWBJiVTOX47VrzShXbmXpef+UUWvJ2QOtmW33b2NGB6DTlAu/xpPAru3WBNOyyU3qbRHHJOSCsu7jEiJ4qgtScRcWrZsNn9CJGv6hZ9NCyhuF6yrP+CKz7EoD8bKR+p7ad20snX80qh4BtABbtNbD858P3nkMheQmUwvucPKXPdFzBCtbBsMUKWqNehhE+tt3yKPSy2XRcvYPsJZCpNSuBrDLtJ5ZjAmRRd9CeklL6d/fYX99ijjSwNV3oRG6RWYVw1jkEqBGfxVXjX944B9/nImJPGEpe36ucyS/cTSNYor6g/OYOfo6cB+jUnea4//6Iu8ZgpEnNvt9mQZ3qGsyFqRztQLaoJGuzw7C6hiqtLvVnAWugZapKmJuGXzlekbt6uf/UC41lFHZhubXjImdtRMv7ROrU3dmrkyk+J/kGO6tv4lZLfTN0l0igiTfD3p9NImWQZy241mKtxtux1EZ5AHE/RWAqMIFVOpcH2GnAfcuJNDCbmS+lDju/KgUkWW2tdBhTgXBkNNZUP6kuNINrq2P3g74DRfC2ZNrdzJxiWKxL0cfLQgMzRB3r3YOVYlp8XZvDAySTzrUVlc8O4E7LfdveIEevcMrU1elPYR9y3FuxirWj5DHfMe7oIWJKB9HovfWhETgs8pQXidnuup5I6XlTzkRapQ=
-after_success: 
+
+after_success:
