@@ -24,7 +24,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-  implementation 'io.github.anderscheow:whatsnew:1.0.0'
+  implementation 'io.github.anderscheow:whatsnew:1.0.1'
 }
 ```
 
@@ -109,6 +109,10 @@ Thanks to [RecyclerView Animators by wasabeef](https://github.com/wasabeef/recyc
 * OVERSHOOT_IN_RIGHT
 
 ## Changelog
+
+**1.0.1**
+
+* Add support for AndroidX
 
 **1.0.0**
 
