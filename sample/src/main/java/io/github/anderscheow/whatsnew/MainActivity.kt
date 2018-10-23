@@ -3,11 +3,13 @@ package io.github.anderscheow.whatsnew
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import io.github.anderscheow.library.WhatsNew
 import io.github.anderscheow.library.listener.WhatsNewListener
 import io.github.anderscheow.library.model.Feature
 import io.github.anderscheow.library.util.FeatureItemAnimator
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +21,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        button_demo.setOnClickListener {
+            buildWhatsNew()
+        }
+    }
+
+    private fun buildWhatsNew() {
         val features = ArrayList<Feature>().apply {
             this.add(Feature.Builder()
                     .setIconRes(R.drawable.access_point)
@@ -69,18 +77,22 @@ class MainActivity : AppCompatActivity() {
                 .setListener(object : WhatsNewListener {
                     override fun onWhatsNewShowed(whatsNew: WhatsNew) {
                         Log.d(TAG, "onWhatsNewShowed")
+                        Toast.makeText( this@MainActivity, "onWhatsNewShowed", Toast.LENGTH_SHORT).show()
                     }
 
                     override fun onWhatsNewDismissed() {
                         Log.d(TAG, "onWhatsNewDismissed")
+                        Toast.makeText( this@MainActivity, "onWhatsNewDismissed", Toast.LENGTH_SHORT).show()
                     }
 
                     override fun onPrimaryButtonClicked(whatsNew: WhatsNew) {
                         Log.d(TAG, "onPrimaryButtonClicked")
+                        Toast.makeText( this@MainActivity, "onPrimaryButtonClicked", Toast.LENGTH_SHORT).show()
                     }
 
                     override fun onSecondaryButtonClicked(whatsNew: WhatsNew) {
                         Log.d(TAG, "onSecondaryButtonClicked")
+                        Toast.makeText( this@MainActivity, "onSecondaryButtonClicked", Toast.LENGTH_SHORT).show()
                     }
                 })
                 .build()
