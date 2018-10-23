@@ -6,7 +6,7 @@
 # What's New
 Beautiful way to showcase new features of your app.
 
-<kbd><img src="https://raw.githubusercontent.com/anderscheow/WhatsNew/master/images/demo.gif"/></kbd>
+![](https://media.giphy.com/media/WgPaFtXbnYhr22UAaG/giphy.gif)
 
 ## 💻 Installation
 
