@@ -10,18 +10,6 @@ Beautiful way to showcase new features of your app.
 
 ## 💻 Installation
 
-Step 1. Add it in your root build.gradle at the end of repositories:
-```groovy
-allprojects {
-  repositories {
-    ... 
-    
-    maven { url 'https://jitpack.io' }
-  }
-}
-```
-
-Step 2. Add the dependency
 ```groovy
 dependencies {
   implementation 'io.github.anderscheow:whatsnew:1.0.1'
@@ -109,6 +97,12 @@ Thanks to [RecyclerView Animators by wasabeef](https://github.com/wasabeef/recyc
 * OVERSHOOT_IN_RIGHT
 
 ## Changelog
+
+**1.1.0**
+
+* Updated Gradle and Kotlin version
+* Changed Android Support artifacts to AndroidX
+* Removed some install dependencies from README
 
 **1.0.1**
 
